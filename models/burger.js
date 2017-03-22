@@ -1,6 +1,6 @@
-var connection = require("../config/orm.js");
+var orm = require("../config/orm.js");
 
-var cat = {
+var burger = {
   all: function(cb) {
     orm.all("burgers", function(res) {
       cb(res);
