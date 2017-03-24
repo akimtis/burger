@@ -21,35 +21,35 @@ router.get("/", function(req, res) {
   });
 });
 
-// router.post("/", function(req, res) {
-//   cat.create([
-//     "name", "sleepy"
-//   ], [
-//     req.body.name, req.body.sleepy
-//   ], function() {
-//     res.redirect("/");
-//   });
-// });
+router.post("/", function(req, res) {
+  burger.create([
+    "name", "devoured"
+  ], [
+    req.body.name, req.body.devoured
+  ], function() {
+    res.redirect("/");
+  });
+});
 
-// router.put("/:id", function(req, res) {
-//   var condition = "id = " + req.params.id;
+router.put("/:id", function(req, res) {
+  var condition = "id = " + req.params.id;
 
-//   console.log("condition", condition);
+  console.log("condition", condition);
 
-//   cat.update({
-//     sleepy: req.body.sleepy
-//   }, condition, function() {
-//     res.redirect("/");
-//   });
-// });
+  burger.update({
+    devoured: req.body.devoured
+  }, condition, function() {
+    res.redirect("/");
+  });
+});
 
-// router.delete("/:id", function(req, res) {
-//   var condition = "id = " + req.params.id;
+router.delete("/:id", function(req, res) {
+  var condition = "id = " + req.params.id;
 
-//   cat.delete(condition, function() {
-//     res.redirect("/");
-//   });
-// });
+  burger.delete(condition, function() {
+    res.redirect("/");
+  });
+});
 
 
 

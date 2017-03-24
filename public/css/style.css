@@ -31,12 +31,23 @@ html, body {
 }
 
 .burgerbackground {
-  background: url('/images/burgerheader.jpg') no-repeat center center scroll; 
+  background: url('images/burgerheader.jpg') no-repeat center center scroll; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 10em;
+  height: 100%;
+  margin: 0;
+  padding-top: 0px;
+}
+
+.burgerbuntop {
+  background: url('images/burgerbuntop.png') no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
   margin: 0;
   padding-top: 0px;
 }
