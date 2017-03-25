@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 var methodOverride = require('method-override');
 var routes = require("./controllers/burgers_controller.js");
 var exphbs = require("express-handlebars");
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 var app = express();
 
@@ -23,5 +23,5 @@ app.use(methodOverride("_method"));
 app.use("/", routes);
 
 app.listen(PORT, function(){
-  console.log("listening on port 3000");
+  console.log("listening on port" + PORT);
 })
