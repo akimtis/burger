@@ -30,19 +30,16 @@ html, body {
   padding-bottom: 20px
 }
 
-.burgerbackground {
-  background: url('images/burgerheader.jpg') no-repeat center center scroll; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100%;
-  margin: 0;
-  padding-top: 0px;
+.input{
+  margin-top: 50px
 }
 
-.burgerbuntop {
-  background: url('images/burgerbuntop.png') no-repeat center center scroll; 
+.btn{
+  text-align: right;
+}
+
+/*.burgerbackground {
+  background: url('/images/burgerheader.jpg') no-repeat center center scroll; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -50,6 +47,19 @@ html, body {
   height: 100%;
   margin: 0;
   padding-top: 0px;
+}*/
+
+.burgerbuntop {
+  background: url('/images/burgerbuntop.png') no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+ /* background-size: cover;*/
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 .homebackground h1{

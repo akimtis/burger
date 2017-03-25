@@ -5,8 +5,9 @@
       <div class="container-fluid">
         <div class ="row">
           <div class="col-md-4">
-          <img src="/images/burgerbuntop.png" alt="burger bun" width=100%>
-          <h3>Burgers to Devour</h3>
+            <img src="/images/burgerbuntop.png" alt="burger bun" width=100%>
+            <h3>Burgers to Devour</h3>
+       
             <table class="table table-striped table-hover ">
               <tbody>
               {{#each burgers}}
@@ -29,6 +30,7 @@
             <img src="/images/burgerbunbottom.png" alt="burger bun" width=100%>
           </div>
        
+
           <div class="col-md-4">
             <div class="panel panel-default">
               <div class="panel-heading">Add a Burger Name</div>
@@ -37,15 +39,15 @@
                 <!-- <form class="create-update-form" action="/" method="POST"> -->
                   <input class="form-control" type="text" id="ca" name="name">
                   <input type="radio" name="devoured" value="1" > Devoured<br>
-                  <input type="radio" name="not_devoured" value="0" > Not Devoured
+                  <input type="radio" name="devoured" value="0" checked> Not Devoured
                 </div>
-                <button class="btn btn-default" type="submit">Add Burger</button>
+                <button class="btn btn-warning" type="submit">Add Burger</button>
                 </div>
-              </div>
             </div>
-  
+          </div>
 
-          <div class="col-md-4">
+
+      <div class="col-md-4">
           <img src="/images/burgerbuntop.png" alt="burger bun" width=100%>
           <h3>The Devoured Burgers</h3>
             <table class="table table-striped table-hover ">
@@ -58,18 +60,16 @@
 
                       <form action="/{{this.id}}?_method=DELETE" method="POST">
                         <input type="hidden" name="devoured" value="false">
-                        <button class="btn btn-default" type="submit">Delete</button>
+                        <button class="btn btn-success" type="submit">Delete</button>
                       </form>
                     </td>
                   </tr>
                 {{/if}}
               {{/each}}
-               
               </tbody>
             </table> 
-              <img src="/images/burgerbunbottom.png" alt="burger bun" width=100%>
+            <img src="/images/burgerbunbottom.png" alt="burger bun" width=100%>
           </div>
-   
       </div> <!-- row -->
     </div> 
 

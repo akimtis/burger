@@ -8,10 +8,6 @@ var burger = require("../models/burger.js");
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
   console.log("hitting home route");
-  debugger
-
-  // console.log("req:", req);
-  // console.log("res:" , res);
   burger.all(function(data) {
     var hbsObject = {
       burgers: data
@@ -35,7 +31,6 @@ router.put("/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
-  console.log("req.body", req.body);
   console.log("req.body.devoured", req.body.devoured);
   burger.update({
     devoured: req.body.devoured
